@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT DMS PRATAMA INDONESIA - We Bridge the Nation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        corpMaroon: '#5C2523',
+                        corpGold: '#C5A059',
+                        corpGoldHover: '#AD8945',
+                        corpCream: '#FAF8F5',
+                        corpDark: '#221F1F'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAF8F5;
+        }
+    </style>
+</head>
+<body class="text-corpDark antialiased overflow-x-hidden">
+
+    <!-- 1. NAVBAR / HEADER -->
+    <header class="fixed top-0 left-0 w-full bg-corpMaroon text-white z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Brand Logo & Slogan -->
+            <a href="#" class="flex flex-col">
+                <span class="font-bold text-lg md:text-xl tracking-wider text-corpGold flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-white"></i> PT DMS PRATAMA INDONESIA
+                </span>
+                <span class="text-xs italic text-gray-300 tracking-widest pl-1">"We Bridge the Nation"</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden xl:flex space-x-5 text-sm font-medium tracking-wide items-center">
+                <a href="#tentang-kami" class="hover:text-corpGold transition-colors">Tentang Kami</a>
+                <a href="#visi-misi" class="hover:text-corpGold transition-colors">Visi & Misi</a>
+                <a href="#keunggulan" class="hover:text-corpGold transition-colors">Keunggulan</a>
+                <a href="#layanan" class="hover:text-corpGold transition-colors">Layanan</a>
+                <a href="#katalog" class="hover:text-corpGold transition-colors">Katalog</a>
+                <a href="#portofolio" class="hover:text-corpGold transition-colors">Portofolio</a>
+                <a href="#legalitas" class="hover:text-corpGold transition-colors">Legalitas</a>
+                <a href="#kontak" class="bg-corpGold text-corpMaroon px-4 py-2 rounded font-semibold hover:bg-white hover:text-corpMaroon transition-all">Hubungi Kami</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="xl:hidden text-white focus:outline-none text-2xl" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Side Navigation -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-corpMaroon border-t border-red-900 transition-all duration-300">
+            <div class="flex flex-col px-4 py-4 space-y-3 text-sm font-medium">
+                <a href="#tentang-kami" class="mobile-link block py-2 border-b border-red-900 hover:text-corpGold">Tentang Kami</a>
+                <a href="#visi-misi" class="mobile-link block py-2 border-b border-red-900 hover:text-corpGold">Visi & Misi</a>
+                <a href="#keunggulan" class="mobile-link block py-2 border-b border-red-900 hover:text-corpGold">Keunggulan</a>
+                <a href="#layanan" class="mobile-link block py-2 border-b border-red-900 hover:text-corpGold">Layanan</a>
+                <a href="#katalog" class="mobile-link block py-2 border-b border-red-900 hover:text-corpGold">Katalog</a>
+                <a href="#portofolio" class="mobile-link block py-2 border-b border-red-900 hover:text-corpGold">Portofolio</a>
+                <a href="#legalitas" class="mobile-link block py-2 border-b border-red-900 hover:text-corpGold">Legalitas</a>
+                <a href="#kontak" class="mobile-link block bg-corpGold text-corpMaroon text-center py-2 rounded font-semibold">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-gradient-to-br from-corpMaroon via-[#401817] to-corpDark text-white flex items-center overflow-hidden">
+        <div class="absolute inset-0 opacity-15">
+            <!-- Background Motif Geometris Simpel -->
+            <div class="absolute inset-0 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 border border-corpGold/40 bg-corpGold/10 px-3 py-1 rounded-full text-corpGold text-sm font-medium mb-6 animate-pulse">
+                    <i class="fa-solid fa-circle text-[8px]"></i> Solusi Industri Terintegrasi Swasta & Manufaktur
+                </div>
+                <h1 class="text-3xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Inovasi Untuk Industri Otomotif, <br class="hidden md:inline">
+                    <span class="text-corpGold">Body Repair, Maritim & Arsitektural</span>
+                </h1>
+                <p class="text-base md:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
+                    Supplier dan distributor terpercaya kebutuhan body repair, bahan material pendukung industri otomotif, serta pelumas generasi baru berbasis teknologi pelapisan tembaga.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#katalog" class="bg-corpGold text-corpMaroon font-bold px-6 py-3 rounded shadow-lg hover:bg-white hover:text-corpMaroon transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-box-open"></i> Lihat Katalog Produk
+                    </a>
+                    <a href="#kontak" class="border border-white/60 text-white font-semibold px-6 py-3 rounded hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-headset"></i> Hubungi Kami
+                    </a>
+                </div>
+            </div>
+            <!-- Dekorasi Identitas Visual Kanan -->
+            <div class="lg:col-span-4 hidden lg:flex justify-center relative">
+                <div class="w-64 h-64 border-4 border-corpGold rounded-full flex items-center justify-center relative bg-corpMaroon/40 backdrop-blur-sm">
+                    <div class="text-center">
+                        <div class="text-5xl font-extrabold text-white tracking-widest">DMS</div>
+                        <div class="text-xs text-corpGold tracking-widest mt-1 font-bold">PRATAMA INDONESIA</div>
+                    </div>
+                    <!-- Lingkar Luar Estetik -->
+                    <div class="absolute -inset-4 border border-dashed border-corpGold/50 rounded-full animate-[spin_20s_linear_infinite]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. TENTANG KAMI (ABOUT US) -->
+    <section id="tentang-kami" class="py-16 md:py-24 bg-white scroll-mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 relative">
+                    <div class="p-4 border-2 border-corpGold/30 rounded-lg bg-corpCream">
+                        <!-- Icon Grid sebagai visual alternatif gambar asli -->
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="p-6 bg-white rounded shadow-sm border-t-4 border-corpMaroon">
+                                <i class="fa-solid fa-car text-3xl text-corpMaroon mb-2"></i>
+                                <h4 class="font-bold text-sm">Otomotif & Bus</h4>
+                            </div>
+                            <div class="p-6 bg-white rounded shadow-sm border-t-4 border-corpGold">
+                                <i class="fa-solid fa-ship text-3xl text-corpGold mb-2"></i>
+                                <h4 class="font-bold text-sm">Marine Window</h4>
+                            </div>
+                            <div class="p-6 bg-white rounded shadow-sm border-t-4 border-corpGold">
+                                <i class="fa-solid fa-building text-3xl text-corpGold mb-2"></i>
+                                <h4 class="font-bold text-sm">Architectural Glass</h4>
+                            </div>
+                            <div class="p-6 bg-white rounded shadow-sm border-t-4 border-corpMaroon">
+                                <i class="fa-solid fa-oil-can text-3xl text-corpMaroon mb-2"></i>
+                                <h4 class="font-bold text-sm">Pelumas Tembaga</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6">
+                    <span class="text-corpGold uppercase font-bold tracking-widest text-sm block mb-2">PROFIL PERUSAHAAN</span>
+                    <h2 class="text-2xl md:text-4xl font-bold text-corpMaroon mb-6">PT DMS Pratama Indonesia</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4 text-justify">
+                        PT DMS Pratama Indonesia adalah perusahaan berbadan hukum Perseroan Terbatas yang bergerak di bidang supplier dan distributor kebutuhan body repair serta bahan material pendukung industri otomotif. Kami hadir sebagai mitra strategis dari PT Neol Niskala Nusantara yang berfokus pada pengembangan dan produksi pelumas generasi baru berbasis teknologi pelapisan tembaga.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+                        Dengan komitmen tinggi terhadap mutu, ketepatan pelayanan, serta rantai ketersediaan produk yang konsisten, kami melayani pemenuhan kebutuhan skala mikro hingga makro demi kelancaran operasional mitra bisnis kami di seluruh Indonesia.
+                    </p>
+                    
+                    <!-- Target Pasar Target Grid -->
+                    <div class="border-t border-gray-200 pt-6">
+                        <h4 class="font-bold text-corpMaroon mb-3"><i class="fa-solid fa-bullseye text-corpGold mr-2"></i>Target Cakupan Pasar:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-corpCream text-corpMaroon px-3 py-1 rounded text-xs font-semibold border border-corpMaroon/10">Bengkel Resmi & Umum</span>
+                            <span class="bg-corpCream text-corpMaroon px-3 py-1 rounded text-xs font-semibold border border-corpMaroon/10">Industri Perbaikan Kendaraan</span>
+                            <span class="bg-corpCream text-corpMaroon px-3 py-1 rounded text-xs font-semibold border border-corpMaroon/10">Toko Cat Otomotif</span>
+                            <span class="bg-corpCream text-corpMaroon px-3 py-1 rounded text-xs font-semibold border border-corpMaroon/10">Workshop Karoseri</span>
+                            <span class="bg-corpCream text-corpMaroon px-3 py-1 rounded text-xs font-semibold border border-corpMaroon/10">Arsitektur & Konstruksi</span>
+                            <span class="bg-corpCream text-corpMaroon px-3 py-1 rounded text-xs font-semibold border border-corpMaroon/10">Marine Glass & Shipyard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. VISI & MISI -->
+    <section id="visi-misi" class="py-16 md:py-24 bg-corpCream scroll-mt-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-corpGold uppercase font-bold tracking-widest text-sm block mb-2">HALUAN KORPORASI</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-corpMaroon">Visi & Misi Perusahaan</h2>
+                <div class="w-20 h-1 bg-corpGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Visi Block -->
+                <div class="lg:col-span-4 bg-corpMaroon text-white p-8 rounded-lg shadow-xl relative overflow-hidden flex flex-col justify-center">
+                    <div class="absolute -right-10 -bottom-10 text-white/5 text-9xl font-bold"><i class="fa-solid fa-eye"></i></div>
+                    <span class="text-corpGold font-bold tracking-wider text-sm uppercase mb-3">VISI UTAMA</span>
+                    <p class="text-lg md:text-xl font-medium leading-relaxed italic text-gray-100">
+                        "Menjadi perusahaan supplier dan distributor terpercaya di Indonesia dalam penyediaan kebutuhan material body repair, bahan pendukung industri otomotif, aksesoris bus, glass, marine window & door, serta menjadi mitra dalam pengembangan produk pelumasan berkualitas."
+                    </p>
+                </div>
+
+                <!-- Misi List Block -->
+                <div class="lg:col-span-8 flex flex-col justify-between space-y-4">
+                    <span class="text-corpMaroon font-bold tracking-wider text-sm uppercase pl-2 block">MISI STRATEGIS</span>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white p-5 rounded border-l-4 border-corpGold shadow-sm flex gap-4">
+                            <div class="text-corpMaroon text-xl font-bold">1.</div>
+                            <p class="text-sm text-gray-700">Menyediakan produk berkualitas untuk kebutuhan pelumasan, body repair, aksesoris bus, glass, serta marine window & door.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded border-l-4 border-corpMaroon shadow-sm flex gap-4">
+                            <div class="text-corpMaroon text-xl font-bold">2.</div>
+                            <p class="text-sm text-gray-700">Memberikan pelayanan terbaik, cepat, dan tepat sesuai kebutuhan pelanggan.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded border-l-4 border-corpMaroon shadow-sm flex gap-4">
+                            <div class="text-corpMaroon text-xl font-bold">3.</div>
+                            <p class="text-sm text-gray-700">Mendukung kerja sama dengan mitra dalam pengembangan dan pemasaran produk pelumasan berbasis teknologi modern.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded border-l-4 border-corpGold shadow-sm flex gap-4">
+                            <div class="text-corpMaroon text-xl font-bold">4.</div>
+                            <p class="text-sm text-gray-700">Memberikan pelayanan profesional, cepat, dan tepat sesuai kebutuhan pelanggan.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded border-l-4 border-corpGold shadow-sm flex gap-4 md:col-span-2">
+                            <div class="text-corpMaroon text-xl font-bold">5.</div>
+                            <p class="text-sm text-gray-700">Menjaga ketersediaan produk secara konsisten agar dapat menjadi mitra bisnis yang terpercaya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. KEUNGGULAN KAMI -->
+    <section id="keunggulan" class="py-16 md:py-24 bg-white scroll-mt-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-corpGold uppercase font-bold tracking-widest text-sm block mb-2">NILAI LEBIH</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-corpMaroon">Mengapa Memilih Kami?</h2>
+                <div class="w-20 h-1 bg-corpGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 bg-corpCream rounded border border-gray-100 hover:border-corpGold hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded bg-corpMaroon flex items-center justify-center text-white text-xl mb-4 group-hover:bg-corpGold transition-colors">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-corpMaroon mb-2">Produk Relevan & Spesifik</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Menyediakan lini produk komplit yang sepenuhnya relevan dengan kebutuhan industri komersial body repair dan manufaktur otomotif.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-6 bg-corpCream rounded border border-gray-100 hover:border-corpGold hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded bg-corpMaroon flex items-center justify-center text-white text-xl mb-4 group-hover:bg-corpGold transition-colors">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-corpMaroon mb-2">Pelumas Pelapisan Tembaga</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Berfokus penuh pada distribusi inovasi pelumas generasi baru berbasis teknologi modern lapisan tembaga.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-6 bg-corpCream rounded border border-gray-100 hover:border-corpGold hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded bg-corpMaroon flex items-center justify-center text-white text-xl mb-4 group-hover:bg-corpGold transition-colors">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-corpMaroon mb-2">Jaringan Distribusi Luas</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Memiliki kesiapan infrastruktur logistik serta jaringan kemitraan retail/korporasi yang terus berkembang luas.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-6 bg-corpCream rounded border border-gray-100 hover:border-corpGold hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded bg-corpMaroon flex items-center justify-center text-white text-xl mb-4 group-hover:bg-corpGold transition-colors">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-corpMaroon mb-2">Kerjasama Strategis Inovatif</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Mendukung akselerasi komersialisasi produk inovatif melalui sinergi manufaktur bersama mitra terpercaya.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="p-6 bg-corpCream rounded border border-gray-100 hover:border-corpGold hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded bg-corpMaroon flex items-center justify-center text-white text-xl mb-4 group-hover:bg-corpGold transition-colors">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-corpMaroon mb-2">Orientasi Kepuasan Mutu</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Mengedepankan standardisasi kontrol kualitas tinggi terhadap performa produk serta pelayanan pasca-jual.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="p-6 bg-corpCream rounded border border-gray-100 hover:border-corpGold hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded bg-corpMaroon flex items-center justify-center text-white text-xl mb-4 group-hover:bg-corpGold transition-colors">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-corpMaroon mb-2">Fleksibilitas Skala Bisnis</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Siap melayani suplai berkala untuk berbagai skala bisnis mulai dari bengkel lokal, toko retail, hingga korporasi besar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LAYANAN UTAMA (CORE SERVICES) -->
+    <section id="layanan" class="py-16 md:py-24 bg-corpCream scroll-mt-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-corpGold uppercase font-bold tracking-widest text-sm block mb-2">STRATEGI BISNIS</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-corpMaroon">Layanan Utama Kami</h2>
+                <div class="w-20 h-1 bg-corpGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-corpMaroon hover:shadow-md transition-all">
+                    <div class="text-corpGold text-3xl mb-4"><i class="fa-solid fa-spray-can"></i></div>
+                    <h3 class="font-bold text-xl text-corpMaroon mb-3">1. Supplier Kebutuhan Body Repair</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Penyediaan material lengkap berkualifikasi tinggi penunjang restorasi kendaraan.</p>
+                    <ul class="text-xs space-y-1 text-gray-500 font-medium">
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Komponen Mekanik (Engsel, Handle, Kunci)</li>
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Cat Otomotif, Epoxy, Dempul & Thiner</li>
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Kaca Laminated, Tempered & Anti Peluru</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-corpGold hover:shadow-md transition-all">
+                    <div class="text-corpGold text-3xl mb-4"><i class="fa-solid fa-bus"></i></div>
+                    <h3 class="font-bold text-xl text-corpMaroon mb-3">2. Distributor Material Otomotif & Aksesoris Bus</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Distribusi suku cadang dan instrumen pelengkap interior serta eksterior karoseri bus.</p>
+                    <ul class="text-xs space-y-1 text-gray-500 font-medium">
+                        <li><i class="fa-solid fa-check text-corpMaroon mr-1"></i> Head/Rear/Marker Lamp & LED Strip</li>
+                        <li><i class="fa-solid fa-check text-corpMaroon mr-1"></i> Panel Dashboard, Louver AC & USB Charger</li>
+                        <li><i class="fa-solid fa-check text-corpMaroon mr-1"></i> Spion, Seat Belt, Locks, Gaspring, Wiper</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-corpMaroon hover:shadow-md transition-all">
+                    <div class="text-corpGold text-3xl mb-4"><i class="fa-solid fa-anchor"></i></div>
+                    <h3 class="font-bold text-xl text-corpMaroon mb-3">3. Glass, Marine Window & Door</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Penyediaan solusi kaca struktural kelas berat untuk arsitektur bangunan dan ekstrusi kapal maritim.</p>
+                    <ul class="text-xs space-y-1 text-gray-500 font-medium">
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Architectural & Decorative Glass</li>
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Kontraktor Struktur Facade & Interior</li>
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Marine Aluminium Extrusion Product Variant</li>
+                    </ul>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-corpGold hover:shadow-md transition-all">
+                    <div class="text-corpGold text-3xl mb-4"><i class="fa-solid fa-oil-can-drip"></i></div>
+                    <h3 class="font-bold text-xl text-corpMaroon mb-3">4. Penyedia Produk Pelumas Inovatif</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Pemasaran pelumas canggih masa depan dengan performa tinggi yang meminimalkan friksi.</p>
+                    <ul class="text-xs space-y-1 text-gray-500 font-medium">
+                        <li><i class="fa-solid fa-check text-corpMaroon mr-1"></i> Pelumas Berteknologi Pelapisan Tembaga</li>
+                        <li><i class="fa-solid fa-check text-corpMaroon mr-1"></i> Kolaborasi Produksi PT Neol Niskala Nusantara</li>
+                        <li><li><i class="fa-solid fa-check text-corpMaroon mr-1"></i> Pengurangan Keausan Komponen Mesin Optimal</li></li>
+                    </ul>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-corpMaroon hover:shadow-md transition-all md:col-span-2 lg:col-span-1 mx-auto w-full">
+                    <div class="text-corpGold text-3xl mb-4"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3 class="font-bold text-xl text-corpMaroon mb-3">5. Solusi Produk untuk Bengkel dan Industri</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Pendampingan teknis dan konsultasi komprehensif dalam pengadaan barang di lapangan.</p>
+                    <ul class="text-xs space-y-1 text-gray-500 font-medium">
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Analisis Efisiensi Penggunaan Produk Lapangan</li>
+                        <li><i class="fa-solid fa-check text-corpGold mr-1"></i> Rekomendasi Akurat Sesuai Karakteristik Bisnis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. KATALOG PRODUK -->
+    <section id="katalog" class="py-16 md:py-24 bg-white scroll-mt-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-corpGold uppercase font-bold tracking-widest text-sm block mb-2">ETALASE DIGITAL</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-corpMaroon">Katalog Produk Unggulan</h2>
+                <div class="w-20 h-1 bg-corpGold mx-auto mt-4"></div>
+            </div>
+
+            <!-- Category Filter Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10 overflow-x-auto pb-2">
+                <button onclick="filterCatalog('all')" class="cat-btn active bg-corpMaroon text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-corpMaroon">Semua Produk</button>
+                <button onclick="filterCatalog('sanding')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Sanding & Abrasive</button>
+                <button onclick="filterCatalog('tape')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Masking & Tape</button>
+                <button onclick="filterCatalog('epoxy')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Epoxy & Dempul</button>
+                <button onclick="filterCatalog('paint')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Paint & Clear</button>
+                <button onclick="filterCatalog('thiner')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Thiner</button>
+                <button onclick="filterCatalog('marine')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Marine & Glass</button>
+                <button onclick="filterCatalog('sealant')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Sealant</button>
+                <button onclick="filterCatalog('bus')" class="cat-btn bg-corpCream text-corpMaroon hover:bg-corpMaroon hover:text-white font-medium text-xs px-4 py-2 rounded-full transition-all border border-gray-200">Bus Accessories</button>
+            </div>
+
+            <!-- Catalog Grid Wrapper -->
+            <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Category: Sanding -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="sanding">
+                    <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=400&q=80" alt="Ampelas Orange Latex" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Sanding & Abrasive</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Ampelas DMS Premium - Orange Latex</h4>
+                            <p class="text-xs text-gray-600 mt-2">Varian Grid: Grit 60 - 3000 berkualitas tinggi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="sanding">
+                    <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?auto=format&fit=crop&w=400&q=80" alt="Abrasive Roll" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Sanding & Abrasive</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Ampelas DMS Premium - Abrasive Roll</h4>
+                            <p class="text-xs text-gray-600 mt-2">Dimensi Ukuran: 10 cm x 50 m efektif untuk workshop.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="sanding">
+                    <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=80" alt="Dry Sanding Straight" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Sanding & Abrasive</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Ampelas DMS Premium - Dry Sanding</h4>
+                            <p class="text-xs text-gray-600 mt-2">Tipe Bentuk: Straight Type untuk pengerjaan presisi tanpa air.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Tape -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="tape">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80" alt="Masking Tape" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Masking & Double Tape</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Masking Tape Orange (Tahan Panas)</h4>
+                            <p class="text-xs text-gray-600 mt-2">Daya rekat kuat, khusus proses oven cat otomotif.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="tape">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" alt="Masking White" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Masking & Double Tape</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Masking Tape White Standard</h4>
+                            <p class="text-xs text-gray-600 mt-2">Pita perekat kertas pelindung pengecatan harian.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="tape">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=400&q=80" alt="Masking Plastic" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Masking & Double Tape</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Masking Plastic with Tape</h4>
+                            <p class="text-xs text-gray-600 mt-2">Plastik proteksi bodi mobil instan yang dilengkapi selotip.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="tape">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=400&q=80" alt="Double Tape" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Masking & Double Tape</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Double Tape VHB & 3M PE Foam</h4>
+                            <p class="text-xs text-gray-600 mt-2">Perekat ganda heavy-duty untuk pemasangan emblem dan list bodi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Epoxy & Dempul -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="epoxy">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Epoxy Primer" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Epoxy & Dempul</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Epoxy Primer PSEP 2K</h4>
+                            <p class="text-xs text-gray-600 mt-2">Kemasan: 1 set (1 ltr + 0.25 ltr). Proteksi antikarat dasar maksimal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="epoxy">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80" alt="Epoxy Filler" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Epoxy & Dempul</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Epoxy Filler Fast Dry 2K</h4>
+                            <p class="text-xs text-gray-600 mt-2">Kemasan: 1 set. Cepat kering dan sangat mudah diamplas halus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="epoxy">
+                    <img src="https://images.unsplash.com/photo-1590479168267-33a8a00222f5?auto=format&fit=crop&w=400&q=80" alt="Dempul CHPO Putty" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Epoxy & Dempul</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Dempul CHPO Putty (4kg)</h4>
+                            <p class="text-xs text-gray-600 mt-2">Dempul tebal konvensional berkualitas untuk menutup penyok dalam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="epoxy">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=400&q=80" alt="Dempul Varian Lengkap" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Epoxy & Dempul</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Dempul Spesialis Premium Varian</h4>
+                            <p class="text-xs text-gray-600 mt-2">Tersedia: BPO Putty (2kg), Flash Blue CHPO, BPO Polyfiber, & Light Weight BPO.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Paint & Clear -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="paint">
+                    <img src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?auto=format&fit=crop&w=400&q=80" alt="Cat PU DMS" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Paint & Clear</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Cat PU-DMS Premium 1K & 2K</h4>
+                            <p class="text-xs text-gray-600 mt-2">Tersedia seluruh pilihan warna (All Colors). Pigmen warna solid & metalik.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="paint">
+                    <img src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=400&q=80" alt="Hardener" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Paint & Clear</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Hardener HS Medium DPC 163</h4>
+                            <p class="text-xs text-gray-600 mt-2">Cairan pengeras lapisan cat & pernis berkarakter High Solid.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="paint">
+                    <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=400&q=80" alt="Clear Coat" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Paint & Clear</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Pernis Clear Coat DPC 5030 / DPC 411</h4>
+                            <p class="text-xs text-gray-600 mt-2">Universal Clear Coat pelindung kilap kaca tahan gores ekstrim.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Thiner -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="thiner">
+                    <img src="https://images.unsplash.com/photo-1541535881962-e668f28b3796?auto=format&fit=crop&w=400&q=80" alt="Thiner PU SWD" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Thiner</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Thiner PU-SWD & PU-Weger</h4>
+                            <p class="text-xs text-gray-600 mt-2">Formula murni Anti Kabut/Blushing dalam cuaca lembap sekalipun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="thiner">
+                    <img src="https://images.unsplash.com/photo-1613217788912-d74653289c94?auto=format&fit=crop&w=400&q=80" alt="Thiner High Gloss" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Thiner</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Thiner PU-Schipol & HG-OWA</h4>
+                            <p class="text-xs text-gray-600 mt-2">Varian Super High Gloss menghasilkan efek pancaran cat yang basah (wet look).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="thiner">
+                    <img src="https://images.unsplash.com/photo-1546554137-f86b9593a222?auto=format&fit=crop&w=400&q=80" alt="Thiner Curah" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Thiner</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Thiner Curah Super Jerigen (20 Itr)</h4>
+                            <p class="text-xs text-gray-600 mt-2">Tersedia klasifikasi kadar: PU, HG, dan ND untuk pembersihan atau pelarutan massal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Marine Glass -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="marine">
+                    <img src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?auto=format&fit=crop&w=400&q=80" alt="Marine Window" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Marine Window & Door</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Scatle + Tutup / Jendela Kapal</h4>
+                            <p class="text-xs text-gray-600 mt-2">Konstruksi kedap air laut berpelindung aluminium ekstrusi kokoh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="marine">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80" alt="Structural Glass" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Architectural Glass</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Kaca Laminated, Tempered, Anti Peluru</h4>
+                            <p class="text-xs text-gray-600 mt-2">Kaca dengan standar ketahanan impak mekanis ekstrim bersertifikasi aman.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Sealant -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="sealant">
+                    <img src="https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&w=400&q=80" alt="Sealant Polyurethane" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Sealant</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Sealant DMS Bonding 500 & PU 209</h4>
+                            <p class="text-xs text-gray-600 mt-2">Varian: White, Grey (600ml), PU 209 Primerless Black (310ml) elastisitas sangat konstan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="sealant">
+                    <img src="https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=400&q=80" alt="Silicone Sealant" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Sealant</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">PU Star Renz 10A, 6134 & Silicone</h4>
+                            <p class="text-xs text-gray-600 mt-2">Silicone Sealant Serbaguna (White/Black/Transparant 300ml) kedap jamur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Bus Accessories -->
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="bus">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=400&q=80" alt="Bus Lighting" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Bus Accessories</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Head Lamp Koroseri (Jetbus 1-5, Legacy, SR1-SR3)</h4>
+                            <p class="text-xs text-gray-600 mt-2">Komplit: Avante, Skylander, Ecoline, Rear/Marker Lamp, LED Strip, Reflektor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="bus">
+                    <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=400&q=80" alt="Bus Mirror" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Bus Accessories</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Spion & Mirror Set (Turbo, JB2, Avante, SR3, Jb5)</h4>
+                            <p class="text-xs text-gray-600 mt-2">Suku cadang spion komplit, kaca pantau bawah, penopang arm lampu LED.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="bus">
+                    <img src="https://images.unsplash.com/photo-1520038410233-7141be7e6f97?auto=format&fit=crop&w=400&q=80" alt="Interior Parts" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Bus Accessories</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Interior & Louver AC (Jetbus, Legacy Varian)</h4>
+                            <p class="text-xs text-gray-600 mt-2">Panel Dashboard, Locks/Doorlock, Sabuk Pengaman Auto/Manual, Curtain Holder.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item bg-corpCream rounded overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between" data-category="bus">
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=400&q=80" alt="Dispenser & Electrical" class="w-full h-40 object-cover">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-corpGold">Bus Accessories</span>
+                            <h4 class="font-bold text-sm text-corpMaroon mt-1">Kabin Hardware (Dispenser, USB Type-C, Wiper)</h4>
+                            <p class="text-xs text-gray-600 mt-2">Gas Spring (12cm-60cm), Ventilator Exhaust Fan 12V/24V, Digital Clock, Pull Handle.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. PORTOFOLIO PROYEK -->
+    <section id="portofolio" class="py-16 md:py-24 bg-corpCream scroll-mt-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-corpGold uppercase font-bold tracking-widest text-sm block mb-2">REKAM JEJAK</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-corpMaroon">Portofolio & Divisi Proyek</h2>
+                <div class="w-20 h-1 bg-corpGold mx-auto mt-4"></div>
+            </div>
+
+            <!-- Divisi 1: Marine Glass -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold text-corpMaroon mb-4 flex items-center gap-2 border-b border-corpGold/30 pb-2">
+                    <i class="fa-solid fa-ship text-corpGold"></i> Marine Glass Division
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div class="bg-white p-4 rounded shadow-sm text-center font-semibold text-xs text-gray-700 hover:text-corpMaroon transition-colors border-t-2 border-corpMaroon">DHARMA RUCITRA VII</div>
+                    <div class="bg-white p-4 rounded shadow-sm text-center font-semibold text-xs text-gray-700 hover:text-corpMaroon transition-colors border-t-2 border-corpMaroon">KM DHARMA RUCITRA VIII</div>
+                    <div class="bg-white p-4 rounded shadow-sm text-center font-semibold text-xs text-gray-700 hover:text-corpMaroon transition-colors border-t-2 border-corpMaroon">KNP 378</div>
+                    <div class="bg-white p-4 rounded shadow-sm text-center font-semibold text-xs text-gray-700 hover:text-corpMaroon transition-colors border-t-2 border-corpMaroon">ALDWIN 5002</div>
+                    <div class="bg-white p-4 rounded shadow-sm text-center font-semibold text-xs text-gray-700 hover:text-corpMaroon transition-colors border-t-2 border-corpMaroon">ALDWIN 3002</div>
+                </div>
+            </div>
+
+            <!-- Divisi 2: Architect Glass -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold text-corpMaroon mb-4 flex items-center gap-2 border-b border-corpGold/30 pb-2">
+                    <i class="fa-solid fa-building text-corpGold"></i> Architect Glass Division
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-5 rounded shadow-sm border-l-4 border-corpGold">
+                        <h4 class="font-bold text-sm text-corpMaroon">HOTEL TENTREM SEMARANG</h4>
+                        <p class="text-xs text-gray-500 mt-1">Lingkup Kerja: Facade, Interior & Railing Glass</p>
+                    </div>
+                    <div class="bg-white p-5 rounded shadow-sm border-l-4 border-corpGold">
+                        <h4 class="font-bold text-sm text-corpMaroon">MENARA BNI JAKARTA</h4>
+                        <p class="text-xs text-gray-500 mt-1">Lingkup Kerja: Facade, Glass Partition</p>
+                    </div>
+                    <div class="bg-white p-5 rounded shadow-sm border-l-4 border-corpGold">
+                        <h4 class="font-bold text-sm text-corpMaroon">TOKOPEDIA TOWER JAKARTA</h4>
+                        <p class="text-xs text-gray-500 mt-1">Lingkup Kerja: Exterior Facade, Cubicle Toilet</p>
+                    </div>
+                    <div class="bg-white p-5 rounded shadow-sm border-l-4 border-corpGold">
+                        <h4 class="font-bold text-sm text-corpMaroon">DATA CENTER ASTAR MOTOR KARAWANG</h4>
+                        <p class="text-xs text-gray-500 mt-1">Lingkup Kerja: Partition Smart Glass Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Authorized Distributor Tag & Ref Kota -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                <div class="lg:col-span-4 bg-corpMaroon text-white p-6 rounded-lg flex flex-col justify-center">
+                    <span class="text-[10px] uppercase font-bold text-corpGold tracking-widest">KEMITRAAN LISENSI RESMI</span>
+                    <h4 class="text-lg font-bold mt-1 mb-2">Authorized Distributor:</h4>
+                    <div class="text-xl font-extrabold text-corpGold">TOSTEM BY LIXIL JAPAN</div>
+                    <p class="text-xs text-gray-300 mt-2 leading-relaxed">Penyediaan Premium Variant Aluminium: Folding Doors, Awning Doors, Structural Facade, dan Sliding Doors.</p>
+                </div>
+                <div class="lg:col-span-8 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h4 class="font-bold text-sm text-corpMaroon mb-3"><i class="fa-solid fa-map-location-dot text-corpGold mr-2"></i>Referensi Sebaran Kota Proyek:</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-3 gap-x-2 text-xs">
+                        <div><strong>Jakarta:</strong> <span class="text-gray-500">BNI Tower, Mayapada, Grand Hyatt, BCA, RTC, dll.</span></div>
+                        <div><strong>Bekasi:</strong> <span class="text-gray-500">Grand Metropolitan, Summarecon Mall, Cibubur.</span></div>
+                        <div><strong>Bandung:</strong> <span class="text-gray-500">Crowne Plaza, Ibis TS, Unpar, Ciumbuleuit.</span></div>
+                        <div><strong>Bogor & Depok:</strong> <span class="text-gray-500">Pullman Resort, Savero, The Park Sawangan, Gunadarma.</span></div>
+                        <div><strong>Serpong:</strong> <span class="text-gray-500">The Branz, Alto Building, Beverly, Pacific Garden.</span></div>
+                        <div><strong>Semarang & Yogya:</strong> <span class="text-gray-500">Tentrem Hotel, Holiday Inn, Grand Edge, Aston.</span></div>
+                        <div><strong>Surabaya & Bali:</strong> <span class="text-gray-500">BCA Data Center, Padma Legian, Samasta, Swiss-Bel.</span></div>
+                        <div><strong>Luar Jawa:</strong> <span class="text-gray-500">Kualanamu Airport (Medan), Islamic Center (Balikpapan), Lombok Airport.</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. LEGALITAS PERUSAHAAN -->
+    <section id="legalitas" class="py-16 md:py-24 bg-white scroll-mt-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-corpCream border border-gray-200/60 rounded-xl shadow-sm overflow-hidden">
+                <div class="bg-corpMaroon text-white p-6 md:p-8 flex items-center justify-between">
+                    <div>
+                        <h2 class="text-xl md:text-3xl font-bold">Legalitas Perusahaan</h2>
+                        <p class="text-xs text-corpGold tracking-wider mt-1 uppercase">Kepatuhan Hukum & Transparansi Tata Kelola</p>
+                    </div>
+                    <div class="text-4xl text-corpGold/40 hidden sm:block"><i class="fa-solid fa-gavel"></i></div>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="text-xs text-gray-600 leading-relaxed mb-6">
+                        PT DMS Pratama Indonesia adalah entitas korporasi resmi swasta nasional berbadan hukum Perseroan Terbatas yang sah di wilayah Republik Indonesia. Seluruh aktivitas niaga, manufaktur logistik, dan kemitraan kami dilindungi payung hukum formal yang valid.
+                    </p>
+                    
+                    <!-- Detail Lembar Info -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs border-t border-b border-gray-200 py-6">
+                        <div class="space-y-2">
+                            <div><strong class="text-corpMaroon">Nama Perusahaan:</strong> <span class="text-gray-700 block">PT DMS Pratama Indonesia</span></div>
+                            <div><strong class="text-corpMaroon">Bentuk Badan Usaha:</strong> <span class="text-gray-700 block">Perseroan Terbatas (PT)</span></div>
+                            <div><strong class="text-corpMaroon">Nomor Induk Berusaha (NIB):</strong> <span class="text-gray-700 font-mono block">0705260006554</span></div>
+                            <div><strong class="text-corpMaroon">NPWP Perusahaan:</strong> <span class="text-gray-700 font-mono block">10.000.000.9-524.221</span></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div><strong class="text-corpMaroon">Akta Pendirian Formal:</strong> <span class="text-gray-700 block">No 73 Tanggal 24 April 2026</span></div>
+                            <div><strong class="text-corpMaroon">Pengesahan SK Kemenkumham:</strong> <span class="text-gray-700 font-mono block">AHU-0032777.AH.01.01.TAHUN 2026</span></div>
+                            <div><strong class="text-corpMaroon">Klasifikasi Bidang Usaha:</strong> <span class="text-gray-700 block">Supplier & distributor material body repair, otomotif, aksesoris bus, glass structural, marine window & door, keteknikan pelumasan mesin industri.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. MITRA KAMI -->
+    <section class="py-12 md:py-16 bg-corpCream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <span class="text-corpGold uppercase font-bold tracking-widest text-xs block mb-1">JARINGAN EKOSISTEM</span>
+                <h3 class="text-lg md:text-2xl font-bold text-corpMaroon">Mitra Kerjasama Strategis</h3>
+            </div>
+            
+            <!-- List Scroll Horisontal/Simpel Grid untuk Aliansi Perusahaan -->
+            <div class="flex flex-wrap justify-center gap-3 text-xs font-semibold text-gray-600 max-w-5xl mx-auto">
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100 text-corpMaroon"><i class="fa-solid fa-handshake-angle text-corpGold mr-1"></i> PT Neol Niskala Nusantara</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Primajasa Perdanarayautama</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Mamera Perdana Utama</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Anugrah Tunas Mulia</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Sinar Jaya Langgeng Utama</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Kijang Mas</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Catur Karya Cemerlang</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Diamond Diaci Anugrah Jaya</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Dwi Mandiri Sukses</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">PT Karsa Pramana Indonesia</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100">CV Global Electronic Solution</span>
+                <span class="bg-white px-4 py-2 rounded shadow-sm border border-gray-100 text-gray-500 italic">Jejaring Toko Cat Wilayah Tangsel, Depok, dan Bogor</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. LOKASI, KONTAK & FOOTER -->
+    <footer id="kontak" class="bg-corpDark text-white pt-16 pb-8 scroll-mt-16">
+        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 border-b border-gray-800 pb-12">
+            
+            <!-- Identitas Footer -->
+            <div class="lg:col-span-5">
+                <h3 class="font-bold text-xl tracking-wider text-corpGold mb-2">PT DMS PRATAMA INDONESIA</h3>
+                <p class="text-xs italic text-gray-400 tracking-widest mb-6">"We Bridge the Nation"</p>
+                <p class="text-xs text-gray-400 leading-relaxed text-justify mb-4">
+                    Penyedia solusi terintegrasi material pendukung industri otomotif, karoseri bus, serta teknologi kaca arsitektural maupun kapal laut. Kami berkomitmen memberikan kualitas terbaik demi kepuasan klien.
+                </p>
+                <div class="flex gap-3 text-lg">
+                    <a href="https://wa.me/6281286137698" target="_blank" class="w-10 h-10 rounded bg-green-700 flex items-center justify-center hover:bg-green-600 transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:info@dmspratamaindonesia.com" class="w-10 h-10 rounded bg-red-700 flex items-center justify-center hover:bg-red-600 transition-colors" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Kontak Info -->
+            <div class="lg:col-span-3">
+                <h4 class="text-corpGold font-bold text-sm tracking-widest uppercase mb-4">Kontak Kami</h4>
+                <ul class="space-y-3 text-xs text-gray-300">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-phone text-corpGold mt-0.5"></i>
+                        <div>
+                            <span class="block font-semibold">Telepon / WhatsApp:</span>
+                            <a href="https://wa.me/6281286137698" target="_blank" class="hover:text-corpGold font-mono text-gray-400">+62 812-8613-7698</a>
+                            <span class="block text-[10px] text-gray-500">(Cp. Renaldi Nugraha)</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-envelope text-corpGold mt-0.5"></i>
+                        <div>
+                            <span class="block font-semibold">Surel Resmi:</span>
+                            <a href="mailto:info@dmspratamaindonesia.com" class="hover:text-corpGold text-gray-400">info@dmspratamaindonesia.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Alamat Kantor -->
+            <div class="lg:col-span-4">
+                <h4 class="text-corpGold font-bold text-sm tracking-widest uppercase mb-4">Dewata Kantor Pusat</h4>
+                <p class="text-xs text-gray-300 leading-relaxed flex gap-2">
+                    <i class="fa-solid fa-location-dot text-corpGold mt-0.5 shrink-0"></i>
+                    <span>
+                        <strong>Dewata Office - Sovereign Plaza 12th Floor</strong><br>
+                        Jl. TB Simatupang No. 36, Cilandak Barat, Cilandak,<br>
+                        Kota Jakarta Selatan, DKI Jakarta 12430.
+                    </span>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Hak Cipta -->
+        <div class="container mx-auto px-4 pt-6 text-center text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 PT DMS PRATAMA INDONESIA. All rights reserved.</p>
+            <p class="text-[10px]">Senior Front-End Dev & UI/UX Compliant</p>
+        </div>
+    </footer>
+
+    <!-- INTERAKTIVITAS JAVASCRIPT VANILLA -->
+    <script>
+        // 1. Mobile Menu Toggler
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tutup menu otomatis setelah klik tautan navigasi mobile
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 2. Katalog Category Filter System
+        function filterCatalog(category) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.cat-btn');
+
+            // Manajemen Class State Button Aktif
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-corpMaroon', 'text-white', 'active');
+                btn.classList.add('bg-corpCream', 'text-corpMaroon');
+            });
+
+            // Cari tombol yang memicu event lalu set jadi aktif
+            const currentBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick').includes(`'${category}'`));
+            if (currentBtn) {
+                currentBtn.classList.remove('bg-corpCream', 'text-corpMaroon');
+                currentBtn.classList.add('bg-corpMaroon', 'text-white', 'active');
+            }
+
+            // Penyaringan Elemen Grid Card
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'flex';
+                } else {
+                    if (item.getAttribute('data-category') === category) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
